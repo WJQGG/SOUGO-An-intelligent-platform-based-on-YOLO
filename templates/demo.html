@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back {
+            width: 100%;
+            height: 620px;
+            background: url("static/down.png") repeat center;
+            background-size: 80%;
+        }
+
+        .font {
+            position: absolute;
+            margin-top: 70px;
+            margin-left: 35%;
+            width: 60%;
+        }
+
+        .font img {
+            width: 400px;
+            height: 100px;
+        }
+
+        .block {
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 23%;
+        }
+
+        .block img {
+            width: 750px;
+            height: 400px;
+            margin-top: 50px;
+        }
+
+        .butt {
+            position: absolute;
+            margin-top: 550px;
+            margin-left: 22%;
+        }
+
+        .butt img {
+            margin-right: 150px;
+            width: 150px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <div class="font">
+            <img src="static/犬类智能平台.png">
+        </div>
+        <div class="block">
+            <img src="{{ url_for('video_feed') }}">
+        </div>
+        <div class="butt">
+            <img src="static/开门框.png">
+            <img src="static/截屏框.png">
+            <img src="static/警报框.png">
+        </div>
+    </div>
+</body>
+
+</html>
